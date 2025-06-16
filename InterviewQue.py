@@ -23,6 +23,30 @@ for key in char_count:
         char_vowel_count[key]=char_count[key]
 print(char_vowel_count)
 
+#find the largest word in string
+def find_longest_word(text):
+    words = text.split(" ")
+    longest_word=""
+    length_longest_word=0
+    for word in words:
+        if len(word)> len(longest_word):
+            longest_word=word
+    length_longest_word = len(longest_word)
+    return print(f"{length_longest_word},{longest_word}")
+
+find_longest_word("I love prgrogramming in python")
+
+def find_long_small_word(text):
+    words = text.split(" ")
+    long_word=max(words,key=len)
+    len_long_word=len(long_word)
+    small_word=min(words,key=len)
+    len_small_word=len(small_word)
+    #length_longest_word = len(longest_word)
+    return print(f"longest:{len_long_word},{long_word},smallest:{len_small_word},{small_word}")
+
+find_long_small_word("I love prgrogramming in python")
+
 
 
 

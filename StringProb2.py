@@ -38,11 +38,9 @@ age="25"
 print(f"My name is {name} and my age is {age}")
 print("My name is {} and my age is {}".format(name,age))
 
-
 #iteration through string:
 for char in "python":
     print(char)
-
 
 #compare two string
 str1="String1"
@@ -52,14 +50,7 @@ print(str1==str2)
 print(str3==str1)
 
 #escape sequence
-
 example="hi,\"What's up?\""#double quote
 example1='hi,"What\'s up?"'#single quote
 print(example1)
 print(example1)
-
-
-
-
-
-

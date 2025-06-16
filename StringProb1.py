@@ -29,6 +29,3 @@ print(word[0:4])#print till 0 t0 3 [0,n]->0 to n-1
 print(word[4:])#print till last
 print(word[-3:])#prints last 3 char
 print(word[::-1])#reverse String
-
-
-
