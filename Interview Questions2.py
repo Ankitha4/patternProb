@@ -24,3 +24,27 @@ for i in swd:
         swtd += i
 print(swtd)
 
+#remove the duplicate word
+str2="apple is sweet sweet fruit sweet"
+str2_dup=[]
+str2_list = str2.split(" ")
+for word in str2_list:
+    if word not in str2_dup:
+        str2_dup.append(word)
+str2_dup=" ".join(str2_dup)
+print(str2_dup)
+
+#remove the repeacting char:
+str3="aaabbbcccdddeeffffaaaaaeeeeddddeeef"
+str4=""
+n=len(str3)
+for char in range(n-1):
+    if str3[char]!= str3[char+1]:
+        str4 += str3[char]
+str4 +=str3[-1]
+print(str4)
+
+
+
+
+
