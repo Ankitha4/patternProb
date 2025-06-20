@@ -17,7 +17,7 @@ else:
     print(f"{str1} is not a palindrome")
 
 #remove the duplicate
-swd="apple"
+swd="applep"
 swtd=""
 for i in swd:
     if i not in swtd:
@@ -43,6 +43,42 @@ for char in range(n-1):
         str4 += str3[char]
 str4 +=str3[-1]
 print(str4)
+
+#first non repeating character
+
+reap_char="aaabssssvbbbbhnj"
+len_str=len(reap_char)
+for i in range(len_str):
+    found=False
+    for j in range(len_str):
+        if i!=j and reap_char[i]==reap_char[j]:
+            found=True
+            break
+    if not found:
+        print(reap_char[i])
+        break
+
+#count how many times each character appears:
+name = "Ankitha S Shetty"
+char_count={}
+for char in name:
+    if char in char_count:
+        char_count[char] += 1
+    else:
+        char_count[char] = 1
+print(char_count)
+
+#Flip the words in a sentence, not letters:
+Flip_words="Flip the words in a sentence"
+Flip_words_list= Flip_words.split()
+Fliped_sentence=[]
+for words in Flip_words_list:
+    flip_words = words[::-1]
+    Fliped_sentence.append(flip_words)
+Fliped_sentence=" ".join(Fliped_sentence)
+print(Fliped_sentence)
+
+
 
 
 
