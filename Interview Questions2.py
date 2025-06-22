@@ -51,7 +51,7 @@ len_str=len(reap_char)
 for i in range(len_str):
     found=False
     for j in range(len_str):
-        if i!=j and reap_char[i]==reap_char[j]:
+        if i!=j and reap_char[i] == reap_char[j]:
             found=True
             break
     if not found:
@@ -69,15 +69,32 @@ for char in name:
 print(char_count)
 
 #Flip the words in a sentence, not letters:
-Flip_words="Flip the words in a sentence"
-Flip_words_list= Flip_words.split()
-Fliped_sentence=[]
+Flip_words = "Flip the words in a sentence"
+Flip_words_list = Flip_words.split()
+rev = Flip_words_list[::-1]
+rev = " ".join(rev)
+print(rev)
+Fl_wrds = []
 for words in Flip_words_list:
-    flip_words = words[::-1]
-    Fliped_sentence.append(flip_words)
-Fliped_sentence=" ".join(Fliped_sentence)
-print(Fliped_sentence)
+    words = words[::-1]
+    Fl_wrds.append(words)
+Fl_wrds = " ".join(Fl_wrds)
+print(Fl_wrds)
 
+# Are two string Anagrams:
+def find_anagram(str1,str2):
+    str1_len = len(str1)
+    str2_len = len(str1)
+    str1 = str1.lower()
+    str2 = str2.lower()
+    str1 = sorted(str1)
+    str2 = sorted(str2)
+    if str1_len==str2_len and str1==str2:
+        result = print("yes")
+    else:
+        result=print("No")
+    return  result
+find_anagram("Mug","gum")
 
 
 
