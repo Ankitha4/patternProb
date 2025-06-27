@@ -1,4 +1,4 @@
-'''
+
 # reverse a string
 str=("Ankitha Shetty")
 str_rev=str[::-1]
@@ -96,7 +96,7 @@ def find_anagram(str1,str2):
         result=print("No")
     return  result
 find_anagram("Mug","gum")
-'''
+
 #Most frequent character in string
 str_ing="Malayalam"
 char_count={}
@@ -112,6 +112,8 @@ for val in char_count.values():
 keys = [key for key,val in char_count.items() if val==high_count]
 keys = "".join(keys)
 print(keys)
+
+
 
 
 
