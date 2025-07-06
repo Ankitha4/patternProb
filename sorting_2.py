@@ -1,4 +1,4 @@
-'''
+
 #buble sort:
 num=[23,4,5,67,90]
 def sort(num):
@@ -10,7 +10,7 @@ def sort(num):
                 num[j+1]=temp
     return print(num)
 sort(num)
-'''
+
 
 #selection sort:
 nums = [5,6,8,9,7,4]
