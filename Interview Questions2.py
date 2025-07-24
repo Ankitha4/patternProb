@@ -45,8 +45,8 @@ for char in range(n-1):
 str4 +=str3[-1]
 print(str4)
 
-#first non repeating character
 
+#first non repeating character
 reap_char="aaabssssvbbbbhnj"
 len_str=len(reap_char)
 for i in range(len_str):

@@ -5,7 +5,7 @@ list1=[1,2,3,8,9]
 def search(list,n):
     i=0
     while i<len(list):
-        if list[i]==n:
+        if list[i] ==n:
             #globals() ['pos'] = i
             return True
         i=i+1
