@@ -13,7 +13,6 @@ result_list = "".join(result_list)
 print(result_list)
 
 #or
-
 s="auuttt23ty222333555666678tybnnm321bb"
 seen_integer =set()
 res_list=[]
