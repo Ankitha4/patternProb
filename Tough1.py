@@ -58,7 +58,5 @@ def contains_value2(d,target):
         if d == target:
             return True
     return False
-
-
 print(contains_value2(dict3, 88))
 
