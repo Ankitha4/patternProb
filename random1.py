@@ -1,5 +1,5 @@
 #reverse a string without using the slicing operation or reverse () function
-'''
+
 def reverse_str(str1):
     result = ""
     for char in str1:
@@ -21,7 +21,8 @@ def del_consonants(str2):
     return result
 
 print(del_consonants("Python and Data Science"))
-'''
+
+#OR
 
 def del_con(str3):
     vol = "aeiouAEIOU"
