@@ -7,6 +7,5 @@ def sum_prime(num):
             res +=i
     return res
 
-
 print(sum_prime(10))
 
