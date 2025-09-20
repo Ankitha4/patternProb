@@ -1,4 +1,4 @@
-#remove only integer repeacteing values from string
+#remove only integer repeating values from string
 s="auuttt23ty222333555666678tybnnm321bb"
 seen_int=[]
 result_list=[]
