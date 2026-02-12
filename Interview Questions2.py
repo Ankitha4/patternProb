@@ -46,6 +46,14 @@ str4 +=str3[-1]
 print(str4)
 
 
+#OR
+non_rep=""
+for i in range(len(str3)):
+    if i== 0 or str3[i]!=str3[i-1]:
+        non_rep +=str3[i]
+print(non_rep)
+
+
 #first non repeating character
 reap_char="aaabssssvbbbbhnj"
 len_str=len(reap_char)
